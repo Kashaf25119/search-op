@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for the best women’s bags in Pakistan. Explore top categories like luxury handbags, trendy crossbody bags, and casual totes. Buy now!">
+    <meta name="keywords" content="women's bags in Pakistan, trendy handbags, luxury bags, best bags for women, stylish women's bags, crossbody bags in Pakistan">
+    <title>Shop Now - Best Women's Bags in Pakistan</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .product-card {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-height: 250px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .product-card-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .add-to-cart-btn {
+            background-color: #4d97ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #1444bd;
+        }
+        .category-title {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .cart-status {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4d6d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Women's Bags in Pakistan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="shop now.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Shop Now Page Content -->
+    <div class="container">
+        <!-- Category: Luxury Handbags -->
+        <div class="category-title">
+            <h2>Luxury Handbags for Women</h2>
+            <p>Explore our premium collection of luxury handbags. Perfect for every occasion.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-card">
+                    <img src="images/luxuray1.jpeg" alt="Luxury Handbag 1" class="img-fluid">
+                    <div class="product-card-body">
+                        <h4>Classic Leather Handbag</h4>
+                        <p>Price: ₹10,000</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Classic Leather Handbag', 10000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-card">
+                    <img src="images/luxuray2.jpeg" alt="Luxury Handbag 2" class="img-fluid">
+                    <div class="product-card-body">
+                        <h4>Chic Designer Handbag</h4>
+                        <p>Price: ₹15,000</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Chic Designer Handbag', 15000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Trendy Crossbody Bags -->
+        <div class="category-title">
+            <h2>Trendy Crossbody Bags</h2>
+            <p>Stay stylish and hands-free with these trendy crossbody bags, ideal for day-to-night wear.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-card">
+                    <img src="images/cross1.jpg" alt="Crossbody Bag 1" class="im">
+                    <div class="product-card-body">
+                        <h4>Mini Crossbody Bag</h4>
+                        <p>Price: ₹3,500</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Mini Crossbody Bag', 3500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-card">
+                    <img src="crossbody-bag2.jpg" alt="Crossbody Bag 2">
+                    <div class="product-card-body">
+                        <h4>Casual Crossbody Bag</h4>
+                        <p>Price: ₹4,500</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Casual Crossbody Bag', 4500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Casual Totes -->
+        <div class="category-title">
+            <h2>Casual Totes for Everyday Use</h2>
+            <p>Our collection of casual totes is perfect for shopping, work, or a day out.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-card">
+                    <img src="casual-tote1.jpg" alt="Casual Tote 1">
+                    <div class="product-card-body">
+                        <h4>Large Canvas Tote</h4>
+                        <p>Price: ₹2,000</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Large Canvas Tote', 2000)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-card">
+                    <img src="casual-tote2.jpg" alt="Casual Tote 2">
+                    <div class="product-card-body">
+                        <h4>Stylish Jute Tote</h4>
+                        <p>Price: ₹2,500</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Stylish Jute Tote', 2500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Status -->
+        <div class="cart-status" id="cart-status">
+            Your Cart: 0 Items
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for Cart -->
+    <script>
+        let cart = 0;
+
+        function addToCart(product, price) {
+            cart += 1;
+            document.getElementById('cart-status').innerHTML = `Your Cart: ${cart} Items`;
+            alert(`${product} added to cart!`);
+        }
+    </script>
+</body>
+</html>

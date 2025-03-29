@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+  }
+
+    /* Custom CSS for full-screen carousel */
+    .carousel-item {
+      height: 100vh;
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-caption {
+      z-index: 1;
+    }
+
+    /* For better text visibility on images */
+    .carousel-caption h5, .carousel-caption p {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      z-index: 2;
+    }
+    .height{
+        height: 500px;
+    }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+  
+  @media (max-width: 767px) {
+    header {
+      padding: 60px 0;
+    }
+  
+    .card-img-top {
+      height: 200px;
+    }
+  }
+  
